@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /*Declaração de variáveis*/
 :root {
@@ -6,6 +6,7 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter', sans-serif;
 }
 
 * {
@@ -16,12 +17,9 @@
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
-}
-
-.principal {
-    background-image: url(../img/Background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .container {
@@ -30,28 +28,32 @@ body{
     grid-template-columns: 50% 50%;
 }
 
+.principal {
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container__titulo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .container__botao {
     background-color: var(--botao-azul);
     border-radius: 5px;
-    padding: 1rem;
+    padding: 1em;
     color: var(--branco-principal);
+    display: block;
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    display: flex;
 }
 
 .botao__secundario {
     background-color: transparent;
-    border-radius: 8px;
-    border: 1px solid var(--branco-principal);
+    border: 2px solid var(--branco-principal);
 }
 
 .container__aviso {
-    color: var(--cinza-secundario);
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
     font-size: 12px;
-    text-align: center;
+    color: var(--cinza-secundario);
 }
