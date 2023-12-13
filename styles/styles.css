@@ -32,6 +32,8 @@ body{
     background-image: url(../img/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container__caixa {
@@ -41,7 +43,6 @@ body{
 .container__titulo {
     font-size: 20px;
     font-weight: 700;
-    text-align: center;
 }
 
 .container__imagem {
