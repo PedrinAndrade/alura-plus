@@ -6,7 +6,6 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030c;
-    --cor-textos: #F9F9F9;
     --fonte-principal: 'Inter', sans-serif;
 }
 
@@ -76,17 +75,26 @@ body{
     margin: 0 10rem;
 }
 
-.secundario__imagem{
+.secundario__imagem {
     width: 80%;
 }
 
-.descricao__titulo{
+.descricao__titulo {
     font-weight: 700;
     font-size: 48px;
     color: var(--branco-principal);
     margin-bottom: 0.1rem;
 }
 
-.descricao__texto{
-    color: var(--cor-textos);
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.container__descricao {
+    padding: 2rem;
 }
