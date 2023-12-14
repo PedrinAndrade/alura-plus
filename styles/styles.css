@@ -7,6 +7,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030c;
     --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #3c92fa;
 }
 
 * {
@@ -128,6 +129,10 @@ body{
     margin: 5rem 3rem;
 }
 
+.rodape__logo {
+    margin-bottom: 2rem;;
+}
+
 .rodape__lista {
     display: flex;
     justify-content: center;
@@ -141,8 +146,17 @@ body{
     margin-left: 1rem;
 }
 
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+
 .rodape__texto {
     margin: 1rem 0;
     font-size: 14px;
     color: var(--cinza-secundario);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
